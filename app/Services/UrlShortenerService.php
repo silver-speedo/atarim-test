@@ -73,7 +73,7 @@ class UrlShortenerService implements UrlShortenerContract
         $hash = '';
         $hashDigits = [];
         //Get an array containing the characters we will be using
-        $base62Chars = preg_split('//','ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789');
+        $base62Chars = preg_split('//','0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz');
         //Pad the ID to ensure its long enough to generate a nice code
         $dividend = str_pad($id, 11, 1000000000, STR_PAD_LEFT);
 

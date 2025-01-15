@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
-use App\Http\Controllers\UrlShortenerController;
+use App\Http\Controllers\Api\UrlShortenerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

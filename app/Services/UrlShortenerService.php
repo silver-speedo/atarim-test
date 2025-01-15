@@ -75,7 +75,7 @@ class UrlShortenerService implements UrlShortenerContract
         //Get an array containing the characters we will be using
         $base62Chars = preg_split('//','0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz');
         //Pad the ID to ensure its long enough to generate a nice code
-        $dividend = str_pad($id, 11, 1000000000, STR_PAD_LEFT);
+        $dividend = str_pad($id, 10, 100000000, STR_PAD_LEFT);
 
         //Work out the remainder and divided amount while the divided value is greater than 0
         while ($dividend > 0) {
